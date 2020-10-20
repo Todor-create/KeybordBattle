@@ -1,0 +1,900 @@
+{"frames": [
+
+{
+	"filename": "Arrow",
+	"frame": {"x":0,"y":0,"w":8,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":38},
+	"sourceSize": {"w":8,"h":38}
+},
+{
+	"filename": "Arrow_left",
+	"frame": {"x":8,"y":0,"w":36,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":23},
+	"sourceSize": {"w":36,"h":23}
+},
+{
+	"filename": "Arrow_left_hor",
+	"frame": {"x":44,"y":0,"w":38,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":8},
+	"sourceSize": {"w":38,"h":8}
+},
+{
+	"filename": "Arrow_left_up",
+	"frame": {"x":82,"y":0,"w":36,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":23},
+	"sourceSize": {"w":36,"h":23}
+},
+{
+	"filename": "Arrow_right",
+	"frame": {"x":118,"y":0,"w":36,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":23},
+	"sourceSize": {"w":36,"h":23}
+},
+{
+	"filename": "Arrow_right_hor",
+	"frame": {"x":154,"y":0,"w":38,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":8},
+	"sourceSize": {"w":38,"h":8}
+},
+{
+	"filename": "Arrow_right_up",
+	"frame": {"x":192,"y":0,"w":36,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":36,"h":23},
+	"sourceSize": {"w":36,"h":23}
+},
+{
+	"filename": "Arrow_up",
+	"frame": {"x":228,"y":0,"w":8,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":38},
+	"sourceSize": {"w":8,"h":38}
+},
+{
+	"filename": "ballista_lvl1_attack_e_1",
+	"frame": {"x":236,"y":0,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_2",
+	"frame": {"x":373,"y":0,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_3",
+	"frame": {"x":510,"y":0,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_4",
+	"frame": {"x":647,"y":0,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_5",
+	"frame": {"x":784,"y":0,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_6",
+	"frame": {"x":0,"y":121,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_7",
+	"frame": {"x":137,"y":121,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_8",
+	"frame": {"x":274,"y":121,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_9",
+	"frame": {"x":411,"y":121,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_10",
+	"frame": {"x":548,"y":121,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_11",
+	"frame": {"x":685,"y":121,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_e_12",
+	"frame": {"x":822,"y":121,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_1",
+	"frame": {"x":0,"y":242,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_2",
+	"frame": {"x":137,"y":242,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_3",
+	"frame": {"x":274,"y":242,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_4",
+	"frame": {"x":411,"y":242,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_5",
+	"frame": {"x":548,"y":242,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_6",
+	"frame": {"x":685,"y":242,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_7",
+	"frame": {"x":822,"y":242,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_8",
+	"frame": {"x":0,"y":363,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_9",
+	"frame": {"x":137,"y":363,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_10",
+	"frame": {"x":274,"y":363,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_11",
+	"frame": {"x":411,"y":363,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_n_12",
+	"frame": {"x":548,"y":363,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_1",
+	"frame": {"x":685,"y":363,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_2",
+	"frame": {"x":822,"y":363,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_3",
+	"frame": {"x":0,"y":484,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_4",
+	"frame": {"x":137,"y":484,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_5",
+	"frame": {"x":274,"y":484,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_6",
+	"frame": {"x":411,"y":484,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_7",
+	"frame": {"x":548,"y":484,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_8",
+	"frame": {"x":685,"y":484,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_9",
+	"frame": {"x":822,"y":484,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_10",
+	"frame": {"x":0,"y":605,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_11",
+	"frame": {"x":137,"y":605,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_ne_12",
+	"frame": {"x":274,"y":605,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_1",
+	"frame": {"x":411,"y":605,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_2",
+	"frame": {"x":548,"y":605,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_3",
+	"frame": {"x":685,"y":605,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_4",
+	"frame": {"x":822,"y":605,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_5",
+	"frame": {"x":0,"y":726,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_6",
+	"frame": {"x":137,"y":726,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_7",
+	"frame": {"x":274,"y":726,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_8",
+	"frame": {"x":411,"y":726,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_9",
+	"frame": {"x":548,"y":726,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_10",
+	"frame": {"x":685,"y":726,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_11",
+	"frame": {"x":822,"y":726,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_nw_12",
+	"frame": {"x":0,"y":847,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_1",
+	"frame": {"x":137,"y":847,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_2",
+	"frame": {"x":274,"y":847,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_3",
+	"frame": {"x":411,"y":847,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_4",
+	"frame": {"x":548,"y":847,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_5",
+	"frame": {"x":685,"y":847,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_6",
+	"frame": {"x":822,"y":847,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_7",
+	"frame": {"x":0,"y":968,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_8",
+	"frame": {"x":137,"y":968,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_9",
+	"frame": {"x":274,"y":968,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_10",
+	"frame": {"x":411,"y":968,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_11",
+	"frame": {"x":548,"y":968,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_s_12",
+	"frame": {"x":685,"y":968,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_1",
+	"frame": {"x":822,"y":968,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_2",
+	"frame": {"x":0,"y":1089,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_3",
+	"frame": {"x":137,"y":1089,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_4",
+	"frame": {"x":274,"y":1089,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_5",
+	"frame": {"x":411,"y":1089,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_6",
+	"frame": {"x":548,"y":1089,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_7",
+	"frame": {"x":685,"y":1089,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_8",
+	"frame": {"x":822,"y":1089,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_9",
+	"frame": {"x":0,"y":1210,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_10",
+	"frame": {"x":137,"y":1210,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_11",
+	"frame": {"x":274,"y":1210,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_se_12",
+	"frame": {"x":411,"y":1210,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_1",
+	"frame": {"x":548,"y":1210,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_2",
+	"frame": {"x":685,"y":1210,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_3",
+	"frame": {"x":822,"y":1210,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_4",
+	"frame": {"x":0,"y":1331,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_5",
+	"frame": {"x":137,"y":1331,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_6",
+	"frame": {"x":274,"y":1331,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_7",
+	"frame": {"x":411,"y":1331,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_8",
+	"frame": {"x":548,"y":1331,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_9",
+	"frame": {"x":685,"y":1331,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_10",
+	"frame": {"x":822,"y":1331,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_11",
+	"frame": {"x":0,"y":1452,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_sw_12",
+	"frame": {"x":137,"y":1452,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_1",
+	"frame": {"x":274,"y":1452,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_2",
+	"frame": {"x":411,"y":1452,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_3",
+	"frame": {"x":548,"y":1452,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_4",
+	"frame": {"x":685,"y":1452,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_5",
+	"frame": {"x":822,"y":1452,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_6",
+	"frame": {"x":0,"y":1573,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_7",
+	"frame": {"x":137,"y":1573,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_8",
+	"frame": {"x":274,"y":1573,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_9",
+	"frame": {"x":411,"y":1573,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_10",
+	"frame": {"x":548,"y":1573,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_11",
+	"frame": {"x":685,"y":1573,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_lvl1_attack_w_12",
+	"frame": {"x":822,"y":1573,"w":137,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":121},
+	"sourceSize": {"w":137,"h":121}
+},
+{
+	"filename": "ballista_tower_lvl1_idle_1",
+	"frame": {"x":0,"y":1694,"w":137,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":274},
+	"sourceSize": {"w":137,"h":274}
+},
+{
+	"filename": "ballista_tower_lvl1_idle_2",
+	"frame": {"x":137,"y":1694,"w":137,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":274},
+	"sourceSize": {"w":137,"h":274}
+},
+{
+	"filename": "ballista_tower_lvl1_idle_3",
+	"frame": {"x":274,"y":1694,"w":137,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":274},
+	"sourceSize": {"w":137,"h":274}
+},
+{
+	"filename": "ballista_tower_lvl1_idle_4",
+	"frame": {"x":411,"y":1694,"w":137,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":274},
+	"sourceSize": {"w":137,"h":274}
+},
+{
+	"filename": "ballista_tower_lvl1_idle_5",
+	"frame": {"x":548,"y":1694,"w":137,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":274},
+	"sourceSize": {"w":137,"h":274}
+},
+{
+	"filename": "ballista_tower_lvl1_idle_6",
+	"frame": {"x":685,"y":1694,"w":137,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":274},
+	"sourceSize": {"w":137,"h":274}
+},
+{
+	"filename": "ballista_tower_lvl1_idle_7",
+	"frame": {"x":822,"y":1694,"w":137,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":274},
+	"sourceSize": {"w":137,"h":274}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "BalistaAnimation.png",
+	"format": "RGBA8888",
+	"size": {"w":959,"h":1968},
+	"scale": "0.2735",
+	"smartupdate": "$TexturePacker:SmartUpdate:0517e3c725ed68972b5bd80c1d9b7759:da12f4b7f60c88b8535c08e53b905549:76989444036512a6344823f968fbf5db$"
+}
+}
