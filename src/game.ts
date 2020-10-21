@@ -16,6 +16,12 @@ class GameApp extends Phaser.Game {
                 backgroundColor: '#385e78',
                 width: 1024,
                 height: 512,
+                physics: { 
+                    default:"arcade",
+                    arcade: {
+                        debug: true
+                    } 
+                },
                 scene: [Boot, Preload, Main]
             };
         }
