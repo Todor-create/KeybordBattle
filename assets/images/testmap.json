@@ -1,12 +1,19 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":15,
  "infinite":false,
  "layers":[
         {
-         "data":[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 2, 1, 1, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 2, 1, 1, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 2, 1, 1, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 2, 1, 1, 1, 6, 6, 6, 6, 6, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 6, 6, 6, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 6, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 6, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 6, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 6, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         "data":[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
          "height":15,
          "id":1,
-         "name":"Tile Layer 1",
+         "name":"GroundLayer",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -20,26 +27,32 @@
          "name":"tower",
          "objects":[
                 {
-                 "gid":8,
-                 "height":189,
+                 "gid":4,
+                 "height":64,
                  "id":4,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"buildable",
-                         "type":"bool",
-                         "value":true
-                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":71,
-                 "x":240,
-                 "y":624
+                 "width":128,
+                 "x":320,
+                 "y":192
                 }, 
                 {
-                 "gid":7,
-                 "height":47,
+                 "gid":5,
+                 "height":64,
+                 "id":5,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":128,
+                 "x":384,
+                 "y":256
+                }, 
+                {
+                 "gid":6,
+                 "height":64,
                  "id":6,
                  "name":"",
                  "properties":[
@@ -51,13 +64,13 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":28,
-                 "x":288,
-                 "y":480
+                 "width":128,
+                 "x":448,
+                 "y":320
                 }, 
                 {
-                 "gid":8,
-                 "height":189,
+                 "gid":6,
+                 "height":64,
                  "id":7,
                  "name":"",
                  "properties":[
@@ -69,93 +82,195 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":71,
+                 "width":128,
                  "x":448,
-                 "y":576
+                 "y":512
                 }, 
                 {
-                 "gid":8,
-                 "height":189,
+                 "gid":5,
+                 "height":64,
                  "id":8,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":71,
-                 "x":704,
-                 "y":384
+                 "width":128,
+                 "x":384,
+                 "y":448
                 }, 
                 {
-                 "gid":8,
-                 "height":189,
+                 "gid":4,
+                 "height":64,
                  "id":9,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":71,
-                 "x":688,
-                 "y":176
+                 "width":128,
+                 "x":320,
+                 "y":384
                 }, 
                 {
-                 "ellipse":true,
-                 "height":32,
-                 "id":10,
+                 "gid":4,
+                 "height":64,
+                 "id":11,
                  "name":"",
-                 "properties":[
-                        {
-                         "name":"gameOver",
-                         "type":"bool",
-                         "value":false
-                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":64,
-                 "x":704,
-                 "y":0
+                 "width":128,
+                 "x":320,
+                 "y":512
                 }, 
                 {
-                 "height":0,
+                 "gid":5,
+                 "height":64,
+                 "id":12,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":128,
+                 "x":384,
+                 "y":576
+                }, 
+                {
+                 "gid":6,
+                 "height":64,
                  "id":13,
                  "name":"",
-                 "point":true,
                  "properties":[
                         {
-                         "name":"spawning point",
-                         "type":"string",
-                         "value":""
+                         "name":"buildable",
+                         "type":"bool",
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":0,
-                 "x":160,
-                 "y":944
+                 "width":128,
+                 "x":448,
+                 "y":640
                 }, 
                 {
-                 "gid":8,
-                 "height":189,
+                 "gid":6,
+                 "height":64,
                  "id":14,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"buildable",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":71,
-                 "x":432,
-                 "y":240
+                 "width":128,
+                 "x":192,
+                 "y":704
                 }, 
                 {
-                 "gid":8,
-                 "height":189,
+                 "gid":5,
+                 "height":64,
                  "id":15,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":71,
-                 "x":304,
-                 "y":304
+                 "width":128,
+                 "x":128,
+                 "y":640
+                }, 
+                {
+                 "gid":4,
+                 "height":64,
+                 "id":16,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":128,
+                 "x":64,
+                 "y":576
+                }, 
+                {
+                 "gid":6,
+                 "height":64,
+                 "id":17,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"buildable",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":128,
+                 "x":768,
+                 "y":320
+                }, 
+                {
+                 "gid":5,
+                 "height":64,
+                 "id":18,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":128,
+                 "x":704,
+                 "y":256
+                }, 
+                {
+                 "gid":4,
+                 "height":64,
+                 "id":19,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":128,
+                 "x":640,
+                 "y":192
+                }, 
+                {
+                 "height":0,
+                 "id":20,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"spawn",
+                         "type":"string",
+                         "value":"here"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":240,
+                 "y":960
+                }, 
+                {
+                 "ellipse":true,
+                 "height":16,
+                 "id":21,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"gameOver",
+                         "type":"string",
+                         "value":"you lose ..."
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":64,
+                 "x":640,
+                 "y":0
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -164,57 +279,23 @@
          "y":0
         }],
  "nextlayerid":3,
- "nextobjectid":16,
+ "nextobjectid":22,
  "orientation":"isometric",
  "renderorder":"right-down",
  "tiledversion":"1.4.2",
  "tileheight":64,
  "tilesets":[
         {
-         "columns":0,
+         "columns":1,
          "firstgid":1,
-         "grid":
-            {
-             "height":1,
-             "orientation":"orthogonal",
-             "width":1
-            },
+         "image":"tileset.png",
+         "imageheight":384,
+         "imagewidth":128,
          "margin":0,
-         "name":"lowrez",
+         "name":"tileset",
          "spacing":0,
-         "tilecount":5,
-         "tileheight":189,
-         "tiles":[
-                {
-                 "id":0,
-                 "image":"F:\/tilemaps\/LowerResolution\/desert128x64.png",
-                 "imageheight":64,
-                 "imagewidth":128
-                }, 
-                {
-                 "id":1,
-                 "image":"F:\/tilemaps\/LowerResolution\/128x64.png",
-                 "imageheight":64,
-                 "imagewidth":128
-                }, 
-                {
-                 "id":5,
-                 "image":"F:\/tilemaps\/LowerResolution\/grass128x64.png",
-                 "imageheight":64,
-                 "imagewidth":128
-                }, 
-                {
-                 "id":6,
-                 "image":"F:\/tilemaps\/LowerResolution\/pointer1.png",
-                 "imageheight":47,
-                 "imagewidth":28
-                }, 
-                {
-                 "id":7,
-                 "image":"F:\/tilemaps\/LowerResolution\/buildingIcon.png",
-                 "imageheight":189,
-                 "imagewidth":71
-                }],
+         "tilecount":6,
+         "tileheight":64,
          "tilewidth":128
         }],
  "tilewidth":128,
