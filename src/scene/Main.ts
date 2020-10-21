@@ -1,3 +1,5 @@
+import { EnemyOger } from "../enemies/EnemyOger";
+
 class Main extends Phaser.Scene {
     private map: Phaser.Tilemaps.Tilemap;
 
@@ -5,13 +7,24 @@ class Main extends Phaser.Scene {
         super("main");
     }
 
+    // var tileWidthHalf;
+    // var tileHeightHalf;
+    
+
     create() {
-        this.map = this.make.tilemap({ key: "testMap" });
+    
+        let enemyOger1: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 100, 100);
 
-        let tileset: Phaser.Tilemaps.Tileset = this.map.addTilesetImage("tileset", "tileset");
+        this.add.existing(enemyOger1);        
 
-        let groundLayer: Phaser.Tilemaps.StaticTilemapLayer = this.map.createStaticLayer("Groundlayer", tileset, 0, 0);
+        // this.map = this.make.tilemap({ key: "testMap" });
+
+        // let tileset: Phaser.Tilemaps.Tileset = this.map.addTilesetImage("tileset", "tileset");
+
+        // let groundLayer: Phaser.Tilemaps.StaticTilemapLayer = this.map.createStaticLayer("GroundLayer", tileset, 0, 0);
         
+
+
         console.log("MAIN");
     }
 
