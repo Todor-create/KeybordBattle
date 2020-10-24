@@ -12,8 +12,8 @@ class EnemyOger extends Enemy{
 
         if (this.scene.textures.exists("Ogre_Front-Walking.png") == false) {
             this.scene.textures.addSpriteSheetFromAtlas("Ogre_Front-Walking.png", {
-                frameWidth: 64,
-                frameHeight: 64,
+                frameWidth: 34,
+                frameHeight: 51,
                 atlas: "ogers",
                 frame: "Ogre_Front-Walking.png"
             } as Phaser.Types.Textures.SpriteSheetFromAtlasConfig);
