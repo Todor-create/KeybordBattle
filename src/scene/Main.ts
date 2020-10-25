@@ -1,14 +1,15 @@
 import { EnemyOger } from "../enemies/EnemyOger";
+import { CustomKeyboardInput } from "../utils/CustomKeyboardInput";
 
 class Main extends Phaser.Scene {
-    // private map: Phaser.Tilemaps.Tilemap;
+    // private map: JSON;
     private tileWidthHalf: number;
     private tileHeightHalf: number;
-
+    private keys: CustomKeyboardInput;
+    
     constructor() {
         super("main");
     }
-
 
     preload() {
         this.load.json('testMap', './assets/images/testMap.json');
@@ -17,10 +18,15 @@ class Main extends Phaser.Scene {
     create() {
         this.buildMap();
 
-        let enemyOger1: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 100, 100);
-
+        let enemyOger1: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 300, 300);
+        let enemyOger2: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 100, 100);
+        
         this.add.existing(enemyOger1);
-
+        this.add.existing(enemyOger2);
+        
+        // this.cameras.main.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
+        this.keys = new CustomKeyboardInput(this);
+        
         // this.map = this.make.tilemap({ key: "testMap" });
 
         // let tileset: Phaser.Tilemaps.Tileset = this.map.addTilesetImage("tileset", "tileset");
@@ -29,7 +35,11 @@ class Main extends Phaser.Scene {
 
         console.log("MAIN");
     }
-    
+
+    update() {
+        this.handleKeyboardInput();
+    }
+
     buildMap(): void {
         //  Parse the data out of the map
         let data = this.cache.json.get('testMap');
@@ -63,6 +73,23 @@ class Main extends Phaser.Scene {
 
                 i++;
             }
+        }
+
+    }
+
+    // add controls for the camera
+    private handleKeyboardInput(): void {
+        
+        if (this.keys.up.isDown || this.keys.w.isDown) {
+            this.cameras.main.scrollY -= 2;
+        } else if (this.keys.down.isDown || this.keys.s.isDown) {
+            this.cameras.main.scrollY += 2;
+        }
+
+        if (this.keys.left.isDown || this.keys.a.isDown) {
+            this.cameras.main.scrollX -= 2;
+        } else if (this.keys.right.isDown || this.keys.d.isDown) {
+            this.cameras.main.scrollX += 2;
         }
 
     }
