@@ -1,4 +1,5 @@
 import { EnemyOger } from "../enemies/EnemyOger";
+import { EnemyArmoredOger } from "../enemies/EnemyArmoredOger";
 import { CustomKeyboardInput } from "../utils/CustomKeyboardInput";
 
 class Main extends Phaser.Scene {
@@ -19,23 +20,18 @@ class Main extends Phaser.Scene {
     create() {
         this.buildMap();
 
-        let enemyOger1: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 300, 300);
-        let enemyOger2: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 100, 100);
-        
+        let enemyOger1: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 240, 555);
+        // let enemyArmoredOger1: Phaser.Physics.Arcade.Sprite = new EnemyArmoredOger(this, 280, 595);
+                
         this.add.existing(enemyOger1);
-        this.add.existing(enemyOger2);
+        enemyOger1.setDepth(700);
 
-        enemyOger1.setDepth(500);
-        
+        // this.add.existing(enemyArmoredOger1);
+        // enemyArmoredOger1.setDepth(699);
+
         this.cameras.main.setBounds(0, -15, this.mapwidth * 128, this.mapheight * 64, true);
         this.keys = new CustomKeyboardInput(this);
         
-        // this.map = this.make.tilemap({ key: "testMap" });
-
-        // let tileset: Phaser.Tilemaps.Tileset = this.map.addTilesetImage("tileset", "tileset");
-
-        // let groundLayer: Phaser.Tilemaps.StaticTilemapLayer = this.map.createStaticLayer("GroundLayer", tileset, 0, 0);
-
         console.log("MAIN");
     }
 
