@@ -2,11 +2,12 @@ import { EnemyOger } from "../enemies/EnemyOger";
 import { CustomKeyboardInput } from "../utils/CustomKeyboardInput";
 
 class Main extends Phaser.Scene {
-    // private map: JSON;
     private tileWidthHalf: number;
     private tileHeightHalf: number;
     private keys: CustomKeyboardInput;
-    
+    private mapwidth: number = 15;
+    private mapheight: number = 15;
+
     constructor() {
         super("main");
     }
@@ -23,8 +24,10 @@ class Main extends Phaser.Scene {
         
         this.add.existing(enemyOger1);
         this.add.existing(enemyOger2);
+
+        enemyOger1.setDepth(500);
         
-        // this.cameras.main.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
+        this.cameras.main.setBounds(0, -15, this.mapwidth * 128, this.mapheight * 64, true);
         this.keys = new CustomKeyboardInput(this);
         
         // this.map = this.make.tilemap({ key: "testMap" });
@@ -81,15 +84,15 @@ class Main extends Phaser.Scene {
     private handleKeyboardInput(): void {
         
         if (this.keys.up.isDown || this.keys.w.isDown) {
-            this.cameras.main.scrollY -= 2;
+            this.cameras.main.scrollY -= 7;
         } else if (this.keys.down.isDown || this.keys.s.isDown) {
-            this.cameras.main.scrollY += 2;
+            this.cameras.main.scrollY += 7;
         }
 
         if (this.keys.left.isDown || this.keys.a.isDown) {
-            this.cameras.main.scrollX -= 2;
+            this.cameras.main.scrollX -= 7;
         } else if (this.keys.right.isDown || this.keys.d.isDown) {
-            this.cameras.main.scrollX += 2;
+            this.cameras.main.scrollX += 7;
         }
 
     }
