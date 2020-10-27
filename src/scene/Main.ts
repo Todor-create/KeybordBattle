@@ -8,7 +8,7 @@ class Main extends Phaser.Scene {
     private keys: CustomKeyboardInput;
     private mapwidth: number = 15;
     private mapheight: number = 15;
-
+    private enemy1: EnemyOger;
     constructor() {
         super("main");
     }
@@ -22,13 +22,15 @@ class Main extends Phaser.Scene {
 
         let enemyOger1: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 240, 555);
         // let enemyArmoredOger1: Phaser.Physics.Arcade.Sprite = new EnemyArmoredOger(this, 280, 595);
-                
         this.add.existing(enemyOger1);
         enemyOger1.setDepth(700);
+        
+        this.enemy1 = new EnemyOger(this, 220, 550);
+        this.enemy1.startOnPath();
+        this.enemy1.setDepth(1000);        
+        this.add.existing(this.enemy1);
 
-        // this.add.existing(enemyArmoredOger1);
-        // enemyArmoredOger1.setDepth(699);
-
+        
         this.cameras.main.setBounds(0, -15, this.mapwidth * 128, this.mapheight * 64, true);
         this.keys = new CustomKeyboardInput(this);
         
@@ -37,6 +39,7 @@ class Main extends Phaser.Scene {
 
     update() {
         this.handleKeyboardInput();
+        
     }
 
     buildMap(): void {
