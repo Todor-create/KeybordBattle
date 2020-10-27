@@ -34,7 +34,20 @@ class EnemyOger extends Enemy{
             repeat: -1
         }as Phaser.Types.Animations.Animation);
 
-        this.anims.play("ogerFront");
+        this.scene.anims.create({
+            key: "ogerBack",
+            frames: this.scene.anims.generateFrameNames("ogerBack"),
+            frameRate: 20,
+            repeat: -1
+        }as Phaser.Types.Animations.Animation);
+
+        // this.anims.play("ogerFront");
+        if (this.y--){
+            this.anims.play("ogerBack");
+        } else if(this.y++) {
+            this.anims.stop();
+            this.anims.play("ogerFront");
+        }
     }
 
     public startOnPath() {
