@@ -1,6 +1,8 @@
 import { EnemyOger } from "../enemies/EnemyOger";
 import { EnemyArmoredOger } from "../enemies/EnemyArmoredOger";
 import { CustomKeyboardInput } from "../utils/CustomKeyboardInput";
+import { BalistaTower } from "../towers/BalistaTower";
+import { CannonTower } from "../towers/CannonTower";
 
 class Main extends Phaser.Scene {
     private tileWidthHalf: number;
@@ -10,6 +12,9 @@ class Main extends Phaser.Scene {
     private mapheight: number = 15;
     private enemy1: EnemyOger;
     private enemy2: EnemyArmoredOger;
+
+    //MGM
+    private towerType: number = 1;
 
     constructor() {
         super("main");
@@ -36,11 +41,31 @@ class Main extends Phaser.Scene {
         this.cameras.main.setBounds(0, -15, this.mapwidth * 128, this.mapheight * 64, true);
         this.keys = new CustomKeyboardInput(this);
         
+        //MGM create Towers by mouse click
+
+        this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) =>{
+
+            if(this.towerType === 1){
+            let tower1: Phaser.GameObjects.Sprite = new BalistaTower(this, Math.round(pointer.worldX/70)*70, (Math.round((pointer.worldY-30)/100)*100));
+            this.add.existing(tower1);
+            console.log("X=", pointer.worldX,", Y=", pointer.worldY,"W=", tower1.displayWidth,", H=", tower1.displayHeight, "TowerType", this.towerType);
+            }
+            else if(this.towerType === 2){
+                let tower2: Phaser.GameObjects.Sprite = new CannonTower(this, Math.round(pointer.worldX/70)*70, (Math.round((pointer.worldY-30)/100)*100));
+                this.add.existing(tower2);
+                console.log("X=", pointer.worldX,", Y=", pointer.worldY,"W=", tower2.displayWidth,", H=", tower2.displayHeight, "TowerType", this.towerType);
+            }
+        })
+
         console.log("MAIN");
     }
 
     update() {
         this.handleKeyboardInput();
+
+        //MGM
+        this.chooseTower();
+
         
     }
 
@@ -97,6 +122,7 @@ class Main extends Phaser.Scene {
         }
 
     }
+
     public startOnPath() {
         let follower: any = { t: 0, vec: new Phaser.Math.Vector2() };
         let path = new Phaser.Curves.Path(this.enemy1.x, this.enemy1.y);
@@ -129,6 +155,19 @@ class Main extends Phaser.Scene {
                 }
             }
         });
+
+        
+    }
+
+    //MGM
+    private chooseTower(): void {
+        
+        if (this.keys.b.isDown) {
+            this.towerType = 1;
+        } else if (this.keys.c.isDown) {
+            this.towerType = 2;
+        }
+
     }
 }
 
