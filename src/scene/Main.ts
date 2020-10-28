@@ -3,6 +3,7 @@ import { EnemyArmoredOger } from "../enemies/EnemyArmoredOger";
 import { CustomKeyboardInput } from "../utils/CustomKeyboardInput";
 import { BalistaTower } from "../towers/BalistaTower";
 import { CannonTower } from "../towers/CannonTower";
+import { Towers } from "../towers/Towers";
 import { EnemySpawner } from "../enemies/EnemySpawner";
 
 class Main extends Phaser.Scene {
@@ -18,6 +19,8 @@ class Main extends Phaser.Scene {
 
     //MGM
     private towerType: number = 1;
+    private towersArr: Towers[] = [];
+    private nextAttackTime : number = 0;
 
     constructor() {
         super("main");
@@ -53,13 +56,15 @@ class Main extends Phaser.Scene {
         this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) =>{
 
             if(this.towerType === 1){
-            let tower1: Phaser.GameObjects.Sprite = new BalistaTower(this, Math.round(pointer.worldX/70)*70, (Math.round((pointer.worldY-30)/100)*100));
+            let tower1: BalistaTower = new BalistaTower(this, Math.round(pointer.worldX/70)*70, (Math.round((pointer.worldY-30)/100)*100));
             this.add.existing(tower1);
+            this.towersArr.push(tower1);
             console.log("X=", pointer.worldX,", Y=", pointer.worldY,"W=", tower1.displayWidth,", H=", tower1.displayHeight, "TowerType", this.towerType);
             }
             else if(this.towerType === 2){
-                let tower2: Phaser.GameObjects.Sprite = new CannonTower(this, Math.round(pointer.worldX/70)*70, (Math.round((pointer.worldY-30)/100)*100));
+                let tower2: CannonTower = new CannonTower(this, Math.round(pointer.worldX/70)*70, (Math.round((pointer.worldY-30)/100)*100));
                 this.add.existing(tower2);
+                this.towersArr.push(tower2);
                 console.log("X=", pointer.worldX,", Y=", pointer.worldY,"W=", tower2.displayWidth,", H=", tower2.displayHeight, "TowerType", this.towerType);
             }
         })
@@ -72,6 +77,7 @@ class Main extends Phaser.Scene {
 
         //MGM
         this.chooseTower();
+        this.searchEnemy();
 
         
     }
@@ -174,6 +180,25 @@ class Main extends Phaser.Scene {
         }
 
     }
+
+    private searchEnemy (): void {
+        for (let tower of this.towersArr) {   
+
+            let range :number = tower.getRange();
+            let distance :number = Math.sqrt((tower.x-this.enemy1.x)*2 + (tower.y-this.enemy1.y)*2);
+            
+           
+            if (range > distance) { 
+
+               if (this.scene.scene.time.now >= this.nextAttackTime) {
+                   this.nextAttackTime = this.scene.scene.time.now + tower.getAttackSpeed();
+                 console.log("fire");
+               } 
+
+            }       
+       }
+   }
+
     // public startOnPath() {
     //     let follower: any = { t: 0, vec: new Phaser.Math.Vector2() };
     //     let path = new Phaser.Curves.Path(this.enemySpawner.e.x, this.enemySpawner.e.y);
