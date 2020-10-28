@@ -9,6 +9,8 @@ class Main extends Phaser.Scene {
     private mapwidth: number = 15;
     private mapheight: number = 15;
     private enemy1: EnemyOger;
+    private enemy2: EnemyArmoredOger;
+
     constructor() {
         super("main");
     }
@@ -19,16 +21,16 @@ class Main extends Phaser.Scene {
     }
     create() {
         this.buildMap();
-
-        let enemyOger1: Phaser.Physics.Arcade.Sprite = new EnemyOger(this, 240, 555);
-        // let enemyArmoredOger1: Phaser.Physics.Arcade.Sprite = new EnemyArmoredOger(this, 280, 595);
-        this.add.existing(enemyOger1);
-        enemyOger1.setDepth(700);
-        
-        this.enemy1 = new EnemyOger(this, 220, 550);
-        this.enemy1.startOnPath();
+                
+        this.enemy1 = new EnemyOger(this, 200, 550);
+        this.startOnPath();
         this.enemy1.setDepth(1000);        
         this.add.existing(this.enemy1);
+
+        this.enemy2 = new EnemyArmoredOger(this, 220, 550);
+        // this.enemy2.startOnPath();
+        this.enemy2.setDepth(999);        
+        this.add.existing(this.enemy2);
 
         
         this.cameras.main.setBounds(0, -15, this.mapwidth * 128, this.mapheight * 64, true);
@@ -94,6 +96,39 @@ class Main extends Phaser.Scene {
             this.cameras.main.scrollX += 7;
         }
 
+    }
+    public startOnPath() {
+        let follower: any = { t: 0, vec: new Phaser.Math.Vector2() };
+        let path = new Phaser.Curves.Path(this.enemy1.x, this.enemy1.y);
+        path.lineTo(this.enemy1.x += 2.5 * 128, this.enemy1.y -= 2.5 * 64);
+        path.lineTo(this.enemy1.x += 2 * 128, this.enemy1.y += 2 * 64);
+        path.lineTo(this.enemy1.x += 2.5 * 128, this.enemy1.y -= 2.5 * 64);
+        path.lineTo(this.enemy1.x += 1.5 * 128, this.enemy1.y += 1.5 * 64);
+        path.lineTo(this.enemy1.x += 2.5 * 128, this.enemy1.y -= 2.5 * 64);
+
+        this.tweens.add({
+            targets: follower,
+            t: 1,
+            ease: Phaser.Math.Easing.Linear.Linear,
+            duration: 70000,
+            // onComplete: () => {
+            //     gameOver;
+            // },
+            onUpdate: () => {
+                path.getPoint(follower.t, follower.vec);
+                
+                let initialY: number = this.enemy1.y;
+
+                this.enemy1.x = follower.vec.x;
+                this.enemy1.y = follower.vec.y;
+
+                if (this.enemy1.y < initialY) {
+                    this.enemy1.anims.play("ogerBack", true);
+                } else if (this.enemy1.y > initialY) {
+                    this.enemy1.anims.play("ogerFront", true);
+                }
+            }
+        });
     }
 }
 

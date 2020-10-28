@@ -10,22 +10,31 @@ class EnemyArmoredOger extends Enemy{
         this.movementSpeed = this.baseSpeed;
         this.hitPoints = this.baseHP;
 
-        if (this.scene.textures.exists("Armored Ogre_Front-Walking-Right") == false) {
-            this.scene.textures.addSpriteSheetFromAtlas("Armored Ogre_Front-Walking-Right", {
-                frameWidth: 68,
-                frameHeight: 102,
-                atlas: "enemies",
-                frame: "Armored Ogre_Front-Walking-Right"
-            } as Phaser.Types.Textures.SpriteSheetFromAtlasConfig);
+        // if (this.scene.textures.exists("Armored Ogre_Front-Walking-Right") == false) {
+        //     this.scene.textures.addSpriteSheetFromAtlas("Armored Ogre_Front-Walking-Right", {
+        //         frameWidth: 68,
+        //         frameHeight: 102,
+        //         atlas: "enemies",
+        //         frame: "Armored Ogre_Front-Walking-Right"
+        //     } as Phaser.Types.Textures.SpriteSheetFromAtlasConfig);
     
-            this.scene.anims.create({
-                key: "Armored Ogre_Front-Walking-Right.png",
-                frames: this.scene.anims.generateFrameNames("Armored Ogre", { prefix: "Front-Walking-Right", start: 0, end: 30 }),
-                frameRate: 20,
-                repeat: -1
-            });
-        }    
-        this.anims.play("Armored Ogre_Front-Walking-Right");
+        //     this.scene.anims.create({
+        //         key: "Armored Ogre_Front-Walking-Right.png",
+        //         frames: this.scene.anims.generateFrameNames("Armored Ogre", { prefix: "Front-Walking-Right", start: 0, end: 30 }),
+        //         frameRate: 20,
+        //         repeat: -1
+        //     });
+        // }    
+        // this.anims.play("Armored Ogre_Front-Walking-Right");
+    
+        this.scene.anims.create({
+            key: "ArmoredOgreFront",
+            frames: this.scene.anims.generateFrameNames("ArmoredOgreFront"),
+            frameRate: 20,
+            repeat: -1
+        }as Phaser.Types.Animations.Animation);
+
+        this.anims.play("ArmoredOgreFront");
     }
 }
 
