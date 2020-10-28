@@ -3,6 +3,7 @@ import { EnemyArmoredOger } from "../enemies/EnemyArmoredOger";
 import { CustomKeyboardInput } from "../utils/CustomKeyboardInput";
 import { BalistaTower } from "../towers/BalistaTower";
 import { CannonTower } from "../towers/CannonTower";
+import { EnemySpawner } from "../enemies/EnemySpawner";
 
 class Main extends Phaser.Scene {
     private tileWidthHalf: number;
@@ -12,6 +13,8 @@ class Main extends Phaser.Scene {
     private mapheight: number = 15;
     private enemy1: EnemyOger;
     private enemy2: EnemyArmoredOger;
+
+    // private enemySpawner: EnemySpawner;
 
     //MGM
     private towerType: number = 1;
@@ -26,12 +29,16 @@ class Main extends Phaser.Scene {
     }
     create() {
         this.buildMap();
-                
+        
+        // this.enemySpawner = new EnemySpawner(this);
+        // this.add.existing(this.enemySpawner);
+        // this.startOnPath();
+
         this.enemy1 = new EnemyOger(this, 200, 550);
         this.startOnPath();
         this.enemy1.setDepth(1000);        
         this.add.existing(this.enemy1);
-
+        
         this.enemy2 = new EnemyArmoredOger(this, 220, 550);
         // this.enemy2.startOnPath();
         this.enemy2.setDepth(999);        
@@ -120,9 +127,7 @@ class Main extends Phaser.Scene {
         } else if (this.keys.right.isDown || this.keys.d.isDown) {
             this.cameras.main.scrollX += 7;
         }
-
     }
-
     public startOnPath() {
         let follower: any = { t: 0, vec: new Phaser.Math.Vector2() };
         let path = new Phaser.Curves.Path(this.enemy1.x, this.enemy1.y);
@@ -169,6 +174,40 @@ class Main extends Phaser.Scene {
         }
 
     }
+    // public startOnPath() {
+    //     let follower: any = { t: 0, vec: new Phaser.Math.Vector2() };
+    //     let path = new Phaser.Curves.Path(this.enemySpawner.e.x, this.enemySpawner.e.y);
+    //     path.lineTo(this.enemySpawner.e.x += 2.5 * 128, this.enemySpawner.e.y -= 2.5 * 64);
+    //     path.lineTo(this.enemySpawner.e.x += 2 * 128, this.enemySpawner.e.y += 2 * 64);
+    //     path.lineTo(this.enemySpawner.e.x += 2.5 * 128, this.enemySpawner.e.y -= 2.5 * 64);
+    //     path.lineTo(this.enemySpawner.e.x += 1.5 * 128, this.enemySpawner.e.y += 1.5 * 64);
+    //     path.lineTo(this.enemySpawner.e.x += 2.5 * 128, this.enemySpawner.e.y -= 2.5 * 64);
+
+    //     this.tweens.add({
+    //         targets: follower,
+    //         t: 1,
+    //         ease: Phaser.Math.Easing.Linear.Linear,
+    //         duration: 70000,
+    //         // onComplete: () => {
+    //         //     gameOver;
+    //         // },
+    //         onUpdate: () => {
+    //             path.getPoint(follower.t, follower.vec);
+                
+    //             let initialY: number = this.enemySpawner.y;
+
+    //             this.enemySpawner.e.x = follower.vec.x;
+    //             this.enemySpawner.e.y = follower.vec.y;
+
+    //             if (this.enemySpawner.e.y < initialY) {
+    //                 this.enemySpawner.e.anims.play("ogerBack", true);
+    //             } else if (this.enemySpawner.e.y > initialY) {
+    //                 this.enemySpawner.e.anims.play("ogerFront", true);
+    //             }
+    //         }
+    //     });       
+    // }
+
 }
 
 export { Main }

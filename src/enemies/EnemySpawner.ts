@@ -1,12 +1,14 @@
 import { Enemy } from "./Enemy";
 import { EnemyOger } from "../enemies/EnemyOger";
 import { EnemyArmoredOger } from "../enemies/EnemyArmoredOger";
+import { Main } from "../scene/Main";
 
 class EnemySpawner extends Phaser.GameObjects.Container {
     private readonly newWaveTimeStep: number = 3000;
     private readonly maxWaveCount: number = 5;
 
     public scene: Phaser.Scene;
+    public e: EnemyOger |  EnemyArmoredOger ;
     private enemiesArr: Enemy[];
 
     private lastWaveSpawnTime: number;
@@ -59,14 +61,14 @@ class EnemySpawner extends Phaser.GameObjects.Container {
     }
 
     private spawnOger(): void {
-        let e: EnemyOger = new EnemyOger (this.scene, 200, 580);
-            this.scene.add.existing(e);     
-            this.enemiesArr.push(e);
+        this.e = new EnemyOger (this.scene, 200, 580);
+            this.scene.add.existing(this.e);     
+            this.enemiesArr.push(this.e);
     }
     private spawnArmoredOger(): void {
-        let e: EnemyArmoredOger = new EnemyArmoredOger (this.scene, 200, 580);
-            this.scene.add.existing(e);    
-            this.enemiesArr.push(e);
+        this.e = new EnemyArmoredOger (this.scene, 200, 580);
+            this.scene.add.existing(this.e);    
+            this.enemiesArr.push(this.e);
     }
 }
 

@@ -16,7 +16,6 @@ class Preload extends Phaser.Scene {
         this.load.spritesheet("ArmoredOgreFront", "./assets/images/ArmoredOgreFront.png", {frameWidth: 75, frameHeight: 84});
         this.load.atlas("balistaAnim", "./assets/images/balistaAnim.png", "./assets/images/balistaAnim.json");
         this.load.atlas("cannonAnim", "./assets/images/cannonAnim.png", "./assets/images/cannonAnim.json");
-        this.load.atlas("ogers", "./assets/images/ogers.png", "./assets/images/ogers.json");
                   
         this.load.start();
     }
